@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = inicio;
+
+        function inicio() {
+            for (let i = 0; i < 5; i++) {
+                document.getElementById("caja").
+                innerHTML += `<div class="cajita">${i}</div>`;
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        .cajita {
+            width: 150px;
+            height: 150px;
+            font-size: 2em;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 150px;
+            color: black;
+        }
+    </style>
+    <div id="caja"></div>
+</body>
+
+</html>
